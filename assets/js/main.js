@@ -32,5 +32,15 @@ var app = new Vue ({
                 return this.indice--
             }
         },
-    }
+        autoplay(){
+            this.autoplay = setInterval(()=>{
+              this.sliderRight(true);
+            }, 3000)
+            console.log("play");
+          },
+    },
+    mounted(){
+        console.log("montata");
+        this.autoplay();
+      },
 });
