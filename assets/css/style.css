@@ -1,0 +1,23 @@
+div > img{
+    object-fit: contain;
+}
+
+i{
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+body{
+    background-color: rgb(222, 243, 243);
+}
+
+.pallini{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.pallini:hover{
+    background-color: grey;
+}
