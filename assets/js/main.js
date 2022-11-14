@@ -33,11 +33,14 @@ var app = new Vue ({
             }
         },
         autoplay(){
-            this.autoplay = setInterval(()=>{
+            this.autoplay = setInterval( ()=>{
               this.sliderRight(true);
-            }, 3000)
+            }, 6000)
             console.log("play");
           },
+          SelectPallino(index){
+            this.indice = index
+          }
     },
     mounted(){
         console.log("montata");
