@@ -22,7 +22,7 @@
             <div class="w-75 m-auto mt-5">
                 <img class="w-100 rounded-4" v-bind:src="image[indice]" alt="">
                 <div class="d-flex justify-content-center">
-                    <div class="rounded-circle pallini ms-3 mt-3" v-for="( elem, index ) in image" @click="SelectPallino(index)"></div>
+                    <div class="rounded-circle pallini ms-3 mt-3" v-for="( elem, index ) in image" :class="(index == indice) ? 'bg-primary' : 'bg-black'" @click="SelectPallino(index)"></div>
                     
                 </div>
             </div>
